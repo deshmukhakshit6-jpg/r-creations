@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Get in touch with Nova Interior — book a consultation, ask about a project, or start a conversation about your space.">
+  <meta name="theme-color" content="#f7f5f0">
+  <title>Contact Us | Nova Interior</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Thoughtfully designed spaces, made for living.</span>
+      <span>Planning a new space? <a href="#contact">Let’s talk</a></span>
+    </div>
+  </div>
+
+<!-- Dynamic Header / Navbar -->
+<header class="site-header">
+  <div class="container nav">
+
+    <!-- Brand Logo -->
+    <a class="brand" href="index.html" aria-label="Home">
+      <img
+        src="images/nova-logo.png"
+        alt="Business logo"
+        class="brand-logo"
+        width="56"
+        height="56"
+      >
+
+      <span class="brand-name">
+        R CREAATIONS &amp; DESIGNS
+        <small>DESIGN · DETAIL · LIVING</small>
+      </span>
+    </a>
+
+    <!-- Navigation Links -->
+    <nav
+      class="nav-links"
+      id="navLinks"
+      aria-label="Main navigation"
+    >
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="service.html">Services</a>
+      <a href="project.html">Projects</a>
+      <a href="our.html">Our Process</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Navigation Actions -->
+    <div class="nav-actions">
+      <a class="btn consultation-btn" href="contact.html">
+        Book a Consultation
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-controls="navLinks"
+        aria-expanded="false"
+      >
+        <span class="menu-icon" aria-hidden="true">☰</span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Contact us</span>
+        <h1>Let’s talk about your <em>space.</em></h1>
+        <p>Whether you have a project in mind or just want to explore ideas, we’d love to hear from you. Tell us a little about what you’re imagining — we’ll help you work out the next step.</p>
+      </div>
+    </section>
+
+    <!-- Contact form + details -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-copy">
+            <span class="eyebrow">Get in touch</span>
+            <h2>Tell us about your space.</h2>
+            <p>Share a little about your project and what you want to achieve. Nova Interior can follow up to discuss the brief, timeline and next steps.</p>
+            <div class="contact-details">
+              <div class="contact-detail">
+                <span class="symbol">✉</span>
+                <div><small>Email</small><strong><a href="mailto:hello@novainterior.example">hello@novainterior.example</a></strong></div>
+              </div>
+              <div class="contact-detail">
+                <span class="symbol">☎</span>
+                <div><small>Phone</small><strong><a href="tel:+910000000000">Add phone number</a></strong></div>
+              </div>
+              <div class="contact-detail">
+                <span class="symbol">⌖</span>
+                <div><small>Service area</small><strong>Add your city / service locations</strong></div>
+              </div>
+              <div class="contact-detail">
+                <span class="symbol">◷</span>
+                <div><small>Consultations</small><strong>By appointment</strong></div>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <div class="form-grid">
+              <div class="field"><label for="name">Your name *</label><input id="name" name="name" autocomplete="name" placeholder="Full name" required></div>
+              <div class="field"><label for="email">Email address *</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required></div>
+              <div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+91 ..."></div>
+              <div class="field"><label for="service">Service you need *</label><select id="service" name="service" required><option value="">Choose a service</option><option>Interior Design</option><option>3D Design &amp; Elevation</option><option>Floor Plans &amp; Drawings</option><option>Furniture &amp; Styling</option><option>Residential Interiors</option><option>Commercial Interiors</option><option>Not sure yet</option></select></div>
+              <div class="field full"><label for="message">Tell us about your project *</label><textarea id="message" name="message" placeholder="Space type, location, goals, approximate timeline..." required></textarea></div>
+              <div class="field full"><button class="btn" type="submit">Prepare Enquiry <span class="arrow">↗</span></button><p class="form-note">Demo form: connect this form to your email, CRM or backend before publishing. It does not send data yet. By submitting, you agree to our <a href="#">privacy policy</a>.</p><div class="form-status" id="formStatus" role="status" aria-live="polite"></div></div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Quick channels -->
+        <div class="channels">
+          <div class="channel">
+            <span class="symbol">✉</span>
+            <h3>Email us</h3>
+            <p>Best for briefs, timelines and project details.</p>
+            <a href="mailto:hello@novainterior.example">hello@novainterior.example ↗</a>
+          </div>
+          <div class="channel">
+            <span class="symbol">☎</span>
+            <h3>Call us</h3>
+            <p>For quick questions or to book a consultation.</p>
+            <a href="tel:+910000000000">Add phone number ↗</a>
+          </div>
+          <div class="channel">
+            <span class="symbol">◷</span>
+            <h3>Book a consultation</h3>
+            <p>A focused conversation about your space and next steps.</p>
+            <a href="#contactForm">Start the form ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map / Location -->
+    <section class="section" id="location" style="padding-top:0">
+      <div class="container">
+        <div class="map-block">
+          <div class="map-info">
+            <span class="eyebrow">Find us</span>
+            <h2>Visit the studio.</h2>
+            <p>Consultations are by appointment so we can give you our full attention. Get in touch to arrange a time that works for you.</p>
+            <div class="map-detail">
+              <div><strong>Studio:</strong> Add your studio address</div>
+              <div><strong>City:</strong> Add your city</div>
+              <div><strong>Hours:</strong> Mon–Fri, 10am–6pm</div>
+            </div>
+            <a class="btn" href="index.html#contact">Book a Visit <span class="arrow">↗</span></a>
+          </div>
+          <div class="map-visual" role="img" aria-label="Map placeholder showing studio location">
+            <div class="pin"><span>◉</span></div>
+            <div class="map-label">Studio location</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Office hours -->
+    <section class="hours">
+      <div class="container">
+        <div class="hours-grid">
+          <div class="hours-copy">
+            <span class="eyebrow">When to reach us</span>
+            <h2>Studio hours.</h2>
+            <p>We’re a small studio, so we keep things focused. Here’s when you can usually reach us — or book a time that suits you.</p>
+          </div>
+          <ul class="hours-list">
+            <li><span>Monday – Thursday</span><span>10:00 – 18:00</span></li>
+            <li><span>Friday</span><span>10:00 – 16:00</span></li>
+            <li><span>Saturday</span><span>By appointment</span></li>
+            <li><span>Sunday</span><span>Closed</span></li>
+            <li><span>Consultations</span><span>By appointment</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Common questions</span>
+          <h2>Before you get in touch.</h2>
+          <p>Quick answers to the questions we hear most often. Not seeing yours? Send us a message.</p>
+        </div>
+        <div class="faq-grid">
+          <details class="faq-item">
+            <summary>What happens after I send the form?</summary>
+            <div class="faq-answer">We’ll read your enquiry and get back to you — usually within a couple of working days — to arrange a short conversation about your space, goals, timeline and budget. From there, we’ll recommend the right next step.</div>
+          </details>
+          <details class="faq-item">
+            <summary>Is the first consultation free?</summary>
+            <div class="faq-answer">Our initial conversation is about understanding your project — we’ll let you know clearly what’s included and any costs before you commit to anything. Add your specific policy here before launch.</div>
+          </details>
+          <details class="faq-item">
+            <summary>Can I share photos or plans with my enquiry?</summary>
+            <div class="faq-answer">Yes, absolutely — photos or plans help a lot. Mention in your message that you have them and we’ll reply with a way to send them securely.</div>
+          </details>
+          <details class="faq-item">
+            <summary>Do you work remotely or only locally?</summary>
+            <div class="faq-answer">We work on both local and remote projects. Many services — plans, visualisations, styling direction — can be delivered remotely with video calls. Add your service area details here before launch.</div>
+          </details>
+          <details class="faq-item">
+            <summary>How soon can we start?</summary>
+            <div class="faq-answer">That depends on scope and our current schedule. Tell us your timeline in the form and we’ll be upfront about availability and what’s realistic.</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" style="padding-top:0">
+      <div class="container">
+        <div class="cta-panel">
+          <div>
+            <h2>Your space has potential. Let’s discover it.</h2>
+            <p>Tell us what you’re imagining — we’ll help you work out the next step.</p>
+          </div>
+          <a class="btn" href="#contact">Start a Conversation <span class="arrow">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="R CREAATIONS & DESIGNS home">
+          <img
+            src="images/nova-logo.png"
+            alt="R CREAATIONS & DESIGNS Logo"
+            class="brand-logo"
+          >
+          <span class="brand-name">
+            R CREAATIONS & DESIGNS
+            <small>DESIGN · DETAIL · LIVING</small>
+          </span>
+        </a>
+
+        <p>
+          Thoughtful spaces, meaningful details and interiors
+          designed around the way you live.
+        </p>
+      </div>
+
+      <!-- Explore -->
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="about.html">About Us</a>
+        <a href="service.html">Services</a>
+        <a href="project.html">Selected Work</a>
+        <a href="our.html">Our Process</a>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="service.html">Interior Design</a>
+        <a href="service.html">3D Design</a>
+        <a href="service.html">Floor Plans</a>
+        <a href="service.html">Commercial Spaces</a>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col">
+        <h4>Get in Touch</h4>
+        <a href="contact.html">Book a Consultation</a>
+        <a href="mailto:hello@novainterior.example">
+          hello@novainterior.example
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Bottom Footer -->
+    <div class="footer-bottom">
+      <span>
+        © <span id="year"></span> Aavrit Interior. All rights reserved.
+      </span>
+      <span>powered by kwanggroup</span>
+    </div>
+  </div>
+</footer>
+
+
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      toggle.textContent = open ? '×' : '☰';
+    });
+    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-label', 'Open menu');
+      toggle.textContent = '☰';
+    }));
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+/* ==========================================
+   GLOBAL SCROLL REVEAL
+   Works across all sections and pages
+========================================== */
+
+(() => {
+  function initScrollReveal() {
+    // Avoid duplicate initialization
+    if (document.documentElement.dataset.revealInitialized === 'true') {
+      return;
+    }
+
+    document.documentElement.dataset.revealInitialized = 'true';
+
+    const selectors = [
+      'main section',
+      'main article',
+      'main [data-reveal]',
+      'main .section',
+      'main .page-hero',
+      'body > section',
+      'body > article',
+      'body > .section',
+      'body > .page-hero',
+      'footer'
+    ];
+
+    const elements = document.querySelectorAll(
+      [...new Set(selectors)].join(',')
+    );
+
+    // Do not hide anything if animations are unsupported
+    if (!('IntersectionObserver' in window)) {
+      return;
+    }
+
+    // Enable animation only after initialization
+    document.documentElement.classList.add('js-reveal-enabled');
+
+    const observer = new IntersectionObserver(
+      (entries, currentObserver) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-revealed');
+            currentObserver.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.08,
+        rootMargin: '0px 0px -35px 0px'
+      }
+    );
+
+    elements.forEach((element) => {
+      // Prevent nested sections from conflicting
+      element.classList.add('reveal-on-scroll');
+
+      observer.observe(element);
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener(
+      'DOMContentLoaded',
+      initScrollReveal,
+      { once: true }
+    );
+  } else {
+    initScrollReveal();
+  }
+})();
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="R CREAATIONS & DESIGNS creates thoughtful interiors, architectural floor plans, 3D elevations and personalized spaces for modern living.">
+  <meta name="theme-color" content="#f7f5f0">
+  <title>R CREAATIONS & DESIGNS | Thoughtful Spaces. Beautiful Living.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="footer.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Topbar -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span>Thoughtfully designed spaces, made for living.</span>
+
+    <span>
+      Planning a new space?
+      <a href="contact.html">Let’s talk</a>
+    </span>
+  </div>
+</div>
+
+<!-- Dynamic Header / Navbar -->
+<header class="site-header">
+  <div class="container nav">
+
+    <!-- Brand Logo -->
+    <a class="brand" href="index.html" aria-label="Home">
+      <img
+        src="images/nova-logo.png"
+        alt="Business logo"
+        class="brand-logo"
+        width="56"
+        height="56"
+      >
+
+      <span class="brand-name">
+        R CREAATIONS &amp; DESIGNS
+        <small>DESIGN · DETAIL · LIVING</small>
+      </span>
+    </a>
+
+    <!-- Navigation Links -->
+    <nav
+      class="nav-links"
+      id="navLinks"
+      aria-label="Main navigation"
+    >
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="service.html">Services</a>
+      <a href="project.html">Projects</a>
+      <a href="our.html">Our Process</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Navigation Actions -->
+    <div class="nav-actions">
+      <a class="btn consultation-btn" href="contact.html">
+        Book a Consultation
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-controls="navLinks"
+        aria-expanded="false"
+      >
+        <span class="menu-icon" aria-hidden="true">☰</span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div class="hero-copy reveal-stagger">
+      <span class="eyebrow" data-reveal="up">Interior design, reimagined</span>
+      <h1 data-reveal="up">Spaces that feel like <em>you.</em></h1>
+      <p data-reveal="up">We turn your ideas into considered, beautiful spaces—balancing thoughtful planning, natural materials and everyday comfort.</p>
+      <div class="hero-actions" data-reveal="up">
+        <a class="btn" href="project.html">Explore Our Work <span class="arrow">↗</span></a>
+        <a class="btn btn-light" href="service.html">Discover Services</a>
+      </div>
+      <div class="hero-proof" data-reveal="up">
+        <div class="avatar-stack">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=90&q=80" alt="" width="36" height="36" />
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=90&q=80" alt="" width="36" height="36" />
+          <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=90&q=80" alt="" width="36" height="36" />
+        </div>
+        <div class="proof-text">
+          <strong>Designed around real life</strong>
+          Personal, practical, beautifully considered
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual" data-reveal="clip">
+      <img class="hero-image"
+           src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1400&q=85"
+           alt="Warm contemporary living room with natural textures"
+           fetchpriority="high" width="1400" height="1600" />
+      <div class="image-index" data-reveal="fade">01 / THOUGHTFUL LIVING</div>
+      <div class="hero-note" data-reveal="up">
+        <strong>Beauty in every detail.</strong>
+        <span>Interiors shaped around your lifestyle, not just a trend.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function () {
+    document.documentElement.classList.remove('no-js');
+    const els = document.querySelectorAll('[data-reveal]');
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    document.querySelectorAll('.reveal-stagger').forEach((parent) => {
+      [...parent.children].forEach((child, i) => {
+        child.style.setProperty('--stagger-index', i);
+      });
+    });
+
+    if (reduce || !('IntersectionObserver' in window)) {
+      els.forEach((el) => el.classList.add('is-visible'));
+      return;
+    }
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            io.unobserve(entry.target);
+          }
+        });
+      },
+      { rootMargin: '0px 0px -10% 0px', threshold: 0.15 }
+    );
+
+    els.forEach((el) => io.observe(el));
+  })();
+</script>
+    <section class="trust-strip" aria-label="Our approach"><div class="container trust-inner"><div class="trust-item"><span class="trust-icon">✳</span>Personalised design</div><div class="trust-item"><span class="trust-icon">⌂</span>Space-smart planning</div><div class="trust-item"><span class="trust-icon">◈</span>Material-led details</div><div class="trust-item"><span class="trust-icon">✓</span>Clear communication</div></div></section>
+
+    <section class="section" id="about"><div class="container about-grid">
+      <div class="about-visual"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1100&q=85" alt="Calm modern home interior with soft neutral finishes" loading="lazy" width="1100" height="1300"><img class="about-small" src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=700&q=85" alt="Carefully styled interior details" loading="lazy" width="700" height="600"><div class="about-badge">DESIGNED WITH INTENTION</div></div>
+      <div class="about-copy"><span class="eyebrow">A little about Nova</span><h2>Good design is more than how a room looks.</h2><p>It’s how a space welcomes you, supports your routine and makes the everyday feel special. At Nova Interior, we bring your ideas together with practical planning and a thoughtful eye for detail.</p><p>From the first sketch to the finishing touches, our approach begins with listening—so the result feels personal, purposeful and distinctly yours.</p><div class="about-stats"><div class="stat"><strong>01:01</strong><span>Personal attention</span></div><div class="stat"><strong>360°</strong><span>Design perspective</span></div><div class="stat"><strong>∞</strong><span>Room to imagine</span></div></div><a class="text-link" href="#contact">Get to know our approach <span class="arrow">↗</span></a></div>
+    </div></section>
+
+    <section class="section services" id="services"><div class="container"><div class="section-head"><span class="eyebrow">What we do</span><h2>From the first idea to the finishing touch.</h2><p>Flexible design support for homes and spaces that deserve a little more thought.</p></div>
+      <div class="service-grid">
+        <article class="service-card"><span class="service-num">01 / PLAN</span><h3>Interior Design</h3><p>Layouts, colours, finishes and furniture choices brought together into a cohesive, personal interior.</p><a class="text-link" href="#contact">Discuss your space ↗</a></article>
+        <article class="service-card"><span class="service-num">02 / VISUALISE</span><h3>3D Design & Elevation</h3><p>Visualise the look and feel of your space before decisions are final, with considered design direction.</p><a class="text-link" href="#contact">Explore visualisation ↗</a></article>
+        <article class="service-card"><span class="service-num">03 / DRAW</span><h3>Floor Plans & Drawings</h3><p>Practical spatial planning and drawing support to help make your project easier to understand.</p><a class="text-link" href="#contact">Plan your project ↗</a></article>
+        <article class="service-card"><span class="service-num">04 / REFINE</span><h3>Furniture & Styling</h3><p>Finishing details, furniture and accessories that add warmth, character and function.</p><a class="text-link" href="#contact">Find your style ↗</a></article>
+        <article class="service-card"><span class="service-num">05 / WORK</span><h3>Residential Spaces</h3><p>Comfortable, thoughtful homes shaped around how you live, rest, work and gather.</p><a class="text-link" href="#contact">Design your home ↗</a></article>
+        <article class="service-card"><span class="service-num">06 / CREATE</span><h3>Commercial Interiors</h3><p>Welcoming, considered environments for studios, offices, boutiques and hospitality spaces.</p><a class="text-link" href="#contact">Shape your business ↗</a></article>
+      </div>
+    </div></section>
+
+    <section class="section" id="projects"><div class="container"><div class="section-head"><span class="eyebrow">Selected inspiration</span><h2>Spaces with a story to tell.</h2><p>A snapshot of styles and details that inspire our approach. Replace these examples with Nova Interior’s verified project photography before launch.</p></div>
+      <div class="projects-grid">
+        <a class="project-card" href="#contact"><img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=1200&q=85" alt="Contemporary living area with neutral furniture" loading="lazy" width="1200" height="1000"><div class="project-info"><span>Residential · Warm minimalism</span><h3>The Quiet Residence</h3><p>Soft textures, natural light and an easy flow.</p></div></a>
+        <div class="project-side">
+          <a class="project-card" href="#contact"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=85" alt="Modern dining area with warm wood finishes" loading="lazy" width="1000" height="650"><div class="project-info"><span>Dining · Contemporary</span><h3>Gather & Stay</h3><p>Made for long conversations.</p></div></a>
+          <a class="project-card" href="#contact"><img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=1000&q=85" alt="Minimal bedroom with layered natural materials" loading="lazy" width="1000" height="650"><div class="project-info"><span>Bedroom · Calm living</span><h3>A Softer Morning</h3><p>A restful space with a quiet palette.</p></div></a>
+        </div>
+      </div>
+    </div></section>
+
+    <section class="section process" id="process"><div class="container"><div class="section-head"><span class="eyebrow">How we work</span><h2>A clear process. A considered result.</h2><p>Good projects begin with good conversations. Here’s how we can move from an idea to a space that works for you.</p></div>
+      <div class="process-grid"><div class="process-step"><span class="number">01</span><h3>Listen & Discover</h3><p>We learn about your needs, preferences, space, timeline and budget.</p></div><div class="process-step"><span class="number">02</span><h3>Plan & Concept</h3><p>We develop a clear design direction with layouts, materials and visual references.</p></div><div class="process-step"><span class="number">03</span><h3>Design & Refine</h3><p>We review the details together and refine the proposal around your feedback.</p></div><div class="process-step"><span class="number">04</span><h3>Bring It Together</h3><p>We align on the next steps, deliverables and coordination needed for your project.</p></div></div>
+    </div></section>
+
+    <section class="section"><div class="container testimonial-grid"><div class="testimonial-intro"><span class="eyebrow">The Nova difference</span><h2>Thoughtful from the first conversation.</h2><p>Your space should reflect your needs, your taste and the way you want to live. We put collaboration and clarity at the centre of the process.</p><a class="text-link" href="#contact">Start a conversation ↗</a></div><div class="quote-card"><div class="stars" aria-label="Five star visual motif">★★★★★</div><p class="quote">“The best spaces don’t just look beautiful. They feel right, work naturally and become part of your everyday story.”</p><div class="quote-person"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="" width="48" height="48" loading="lazy"><div><strong>The Nova Interior approach</strong><span>A design philosophy, not a customer testimonial</span></div></div></div></div></section>
+
+    <section class="cta-section"><div class="container"><div class="cta-panel"><div><h2>Your space has potential. Let’s discover it.</h2><p>Tell us what you’re imagining—we’ll help you work out the next step.</p></div><a class="btn" href="#contact">Plan a Consultation <span class="arrow">↗</span></a></div></div></section>
+
+    <section class="section contact" id="contact"><div class="container contact-grid"><div class="contact-copy"><span class="eyebrow">Let’s talk</span><h2>Tell us about your space.</h2><p>Share a little about your project and what you want to achieve. Nova Interior can follow up to discuss the brief, timeline and next steps.</p><div class="contact-details"><div class="contact-detail"><span class="symbol">✉</span><div><small>Email</small><strong>hello@novainterior.example</strong></div></div><div class="contact-detail"><span class="symbol">⌖</span><div><small>Service area</small><strong>Add your city / service locations</strong></div></div><div class="contact-detail"><span class="symbol">◷</span><div><small>Consultations</small><strong>By appointment</strong></div></div></div></div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-grid">
+          <div class="field"><label for="name">Your name *</label><input id="name" name="name" autocomplete="name" placeholder="Full name" required></div>
+          <div class="field"><label for="email">Email address *</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required></div>
+          <div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+91 ..."></div>
+          <div class="field"><label for="service">Service you need *</label><select id="service" name="service" required><option value="">Choose a service</option><option>Interior Design</option><option>3D Design & Elevation</option><option>Floor Plans & Drawings</option><option>Furniture & Styling</option><option>Residential Interiors</option><option>Commercial Interiors</option><option>Not sure yet</option></select></div>
+          <div class="field full"><label for="message">Tell us about your project *</label><textarea id="message" name="message" placeholder="Space type, location, goals, approximate timeline..." required></textarea></div>
+          <div class="field full"><button class="btn" type="submit">Prepare Enquiry <span class="arrow">↗</span></button><p class="form-note">Demo form: connect this form to your email, CRM or backend before publishing. It does not send data yet.</p><div class="form-status" id="formStatus" role="status" aria-live="polite"></div></div>
+        </div>
+      </form>
+    </div></section>
+  </main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="R CREAATIONS & DESIGNS home">
+          <img
+            src="images/nova-logo.png"
+            alt="R CREAATIONS & DESIGNS Logo"
+            class="brand-logo"
+          >
+          <span class="brand-name">
+            R CREAATIONS & DESIGNS
+            <small>DESIGN · DETAIL · LIVING</small>
+          </span>
+        </a>
+
+        <p>
+          Thoughtful spaces, meaningful details and interiors
+          designed around the way you live.
+        </p>
+      </div>
+
+      <!-- Explore -->
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="about.html">About Us</a>
+        <a href="service.html">Services</a>
+        <a href="project.html">Selected Work</a>
+        <a href="our.html">Our Process</a>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="service.html">Interior Design</a>
+        <a href="service.html">3D Design</a>
+        <a href="service.html">Floor Plans</a>
+        <a href="service.html">Commercial Spaces</a>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col">
+        <h4>Get in Touch</h4>
+        <a href="contact.html">Book a Consultation</a>
+        <a href="mailto:hello@novainterior.example">
+          hello@novainterior.example
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Bottom Footer -->
+    <div class="footer-bottom">
+      <span>
+        © <span id="year"></span> Aavrit Interior. All rights reserved.
+      </span>
+      <span>powered by kwanggroup</span>
+    </div>
+  </div>
+</footer>
+
+
+<script src="navbar.js" defer></script>
+</body>
+</html>

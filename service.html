@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore Nova Interior's design services — interior design, 3D elevations, floor plans, furniture styling, residential and commercial interiors.">
+  <meta name="theme-color" content="#f7f5f0">
+  <title>Our Services | Nova Interior</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="service.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Thoughtfully designed spaces, made for living.</span>
+      <span>Planning a new space? <a href="index.html#contact">Let’s talk</a></span>
+    </div>
+  </div>
+
+<!-- Dynamic Header / Navbar -->
+<header class="site-header">
+  <div class="container nav">
+
+    <!-- Brand Logo -->
+    <a class="brand" href="index.html" aria-label="Home">
+      <img
+        src="images/nova-logo.png"
+        alt="Business logo"
+        class="brand-logo"
+        width="56"
+        height="56"
+      >
+
+      <span class="brand-name">
+        R CREAATIONS &amp; DESIGNS
+        <small>DESIGN · DETAIL · LIVING</small>
+      </span>
+    </a>
+
+    <!-- Navigation Links -->
+    <nav
+      class="nav-links"
+      id="navLinks"
+      aria-label="Main navigation"
+    >
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="service.html">Services</a>
+      <a href="project.html">Projects</a>
+      <a href="our.html">Our Process</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Navigation Actions -->
+    <div class="nav-actions">
+      <a class="btn consultation-btn" href="contact.html">
+        Book a Consultation
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-controls="navLinks"
+        aria-expanded="false"
+      >
+        <span class="menu-icon" aria-hidden="true">☰</span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container reveal">
+        <span class="eyebrow">Our services</span>
+        <h1>Design support, from first idea to <em>finishing touch.</em></h1>
+        <p>Flexible services for homes and spaces that deserve a little more thought — choose exactly the support you need.</p>
+      </div>
+    </section>
+
+    <!-- SERVICES OVERVIEW CARDS -->
+    <section class="section services-overview" id="overview">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">What we do</span>
+          <h2>Six ways we can help your space.</h2>
+          <p>Every project is different. Here are the core services we offer — mix and match, or start with a consultation.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card reveal">
+            <span class="service-num">01 / PLAN</span>
+            <h3>Interior Design</h3>
+            <p>Layouts, colours, finishes and furniture choices brought together into a cohesive, personal interior.</p>
+            <a class="text-link" href="#interior-design">Learn more ↗</a>
+          </article>
+          <article class="service-card reveal reveal-delay-1">
+            <span class="service-num">02 / VISUALISE</span>
+            <h3>3D Design &amp; Elevation</h3>
+            <p>Visualise the look and feel of your space before decisions are final, with considered design direction.</p>
+            <a class="text-link" href="#3d-design">Learn more ↗</a>
+          </article>
+          <article class="service-card reveal reveal-delay-2">
+            <span class="service-num">03 / DRAW</span>
+            <h3>Floor Plans &amp; Drawings</h3>
+            <p>Practical spatial planning and drawing support to help make your project easier to understand.</p>
+            <a class="text-link" href="#floor-plans">Learn more ↗</a>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-num">04 / REFINE</span>
+            <h3>Furniture &amp; Styling</h3>
+            <p>Finishing details, furniture and accessories that add warmth, character and function.</p>
+            <a class="text-link" href="#furniture-styling">Learn more ↗</a>
+          </article>
+          <article class="service-card reveal reveal-delay-1">
+            <span class="service-num">05 / WORK</span>
+            <h3>Residential Spaces</h3>
+            <p>Comfortable, thoughtful homes shaped around how you live, rest, work and gather.</p>
+            <a class="text-link" href="#residential">Learn more ↗</a>
+          </article>
+          <article class="service-card reveal reveal-delay-2">
+            <span class="service-num">06 / CREATE</span>
+            <h3>Commercial Interiors</h3>
+            <p>Welcoming, considered environments for studios, offices, boutiques and hospitality spaces.</p>
+            <a class="text-link" href="#commercial">Learn more ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DETAILED SERVICES -->
+    <section class="section">
+      <div class="container">
+
+        <!-- 01 Interior Design -->
+        <div class="detail reveal" id="interior-design">
+          <div class="detail-visual">
+            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1100&q=85" alt="Cohesive contemporary interior design" loading="lazy" width="1100" height="840">
+            <span class="detail-num">01</span>
+          </div>
+          <div class="detail-copy">
+            <span class="eyebrow">Interior design</span>
+            <h2>A cohesive interior, built around you.</h2>
+            <p>We bring together layouts, colours, materials and furniture into one considered design direction — so every room feels intentional and connected.</p>
+            <ul class="detail-list">
+              <li>Space planning &amp; layouts</li>
+              <li>Colour, material &amp; finish palettes</li>
+              <li>Furniture &amp; lighting concepts</li>
+              <li>Drawings &amp; design documentation</li>
+            </ul>
+            <a class="btn" href="contact.html">Discuss Your Interior <span class="arrow">↗</span></a>
+          </div>
+        </div>
+
+        <!-- 02 3D Design & Elevation -->
+        <div class="detail reverse reveal" id="3d-design">
+          <div class="detail-visual">
+            <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1100&q=85" alt="3D visualisation of a modern interior" loading="lazy" width="1100" height="840">
+            <span class="detail-num">02</span>
+          </div>
+          <div class="detail-copy">
+            <span class="eyebrow">3D design &amp; elevation</span>
+            <h2>See your space before it’s built.</h2>
+            <p>Realistic visualisations help you understand how your space will look and feel — so you can make confident decisions before anything is finalised.</p>
+            <ul class="detail-list">
+              <li>Photorealistic 3D renders</li>
+              <li>Interior &amp; exterior elevations</li>
+              <li>Material &amp; lighting previews</li>
+              <li>Design revisions based on feedback</li>
+            </ul>
+            <a class="btn" href="contact.html">Request Visualisation <span class="arrow">↗</span></a>
+          </div>
+        </div>
+
+        <!-- 03 Floor Plans & Drawings -->
+        <div class="detail reveal" id="floor-plans">
+          <div class="detail-visual">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1100&q=85" alt="Floor plan and architectural drawings" loading="lazy" width="1100" height="840">
+            <span class="detail-num">03</span>
+          </div>
+          <div class="detail-copy">
+            <span class="eyebrow">Floor plans &amp; drawings</span>
+            <h2>Practical planning, clearly drawn.</h2>
+            <p>Good interiors start with good spatial planning. We create clear, functional drawings that make your project easier to build and understand.</p>
+            <ul class="detail-list">
+              <li>Measured floor plans</li>
+              <li>Furniture layout drawings</li>
+              <li>Working &amp; technical drawings</li>
+              <li>Plan revisions &amp; coordination</li>
+            </ul>
+            <a class="btn" href="contact.html">Plan Your Project <span class="arrow">↗</span></a>
+          </div>
+        </div>
+
+        <!-- 04 Furniture & Styling -->
+        <div class="detail reverse reveal" id="furniture-styling">
+          <div class="detail-visual">
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1100&q=85" alt="Styled modern living room with furniture and accessories" loading="lazy" width="1100" height="840">
+            <span class="detail-num">04</span>
+          </div>
+          <div class="detail-copy">
+            <span class="eyebrow">Furniture &amp; styling</span>
+            <h2>The details that finish a space.</h2>
+            <p>Furniture, accessories and finishing touches add warmth, character and function — turning a good interior into one that feels genuinely lived in.</p>
+            <ul class="detail-list">
+              <li>Furniture selection &amp; sourcing</li>
+              <li>Accessories &amp; decor styling</li>
+              <li>Textiles, rugs &amp; soft furnishing</li>
+              <li>Final styling before handover</li>
+            </ul>
+            <a class="btn" href="contact.html">Find Your Style <span class="arrow">↗</span></a>
+          </div>
+        </div>
+
+        <!-- 05 Residential Spaces -->
+        <div class="detail reveal" id="residential">
+          <div class="detail-visual">
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1100&q=85" alt="Warm residential living space with natural textures" loading="lazy" width="1100" height="840">
+            <span class="detail-num">05</span>
+          </div>
+          <div class="detail-copy">
+            <span class="eyebrow">Residential spaces</span>
+            <h2>Homes shaped around real life.</h2>
+            <p>Comfortable, thoughtful homes designed around the way you live, rest, work and gather — from a single room refresh to a full home redesign.</p>
+            <ul class="detail-list">
+              <li>Living &amp; dining design</li>
+              <li>Bedroom &amp; retreat planning</li>
+              <li>Kitchens &amp; utility spaces</li>
+              <li>Full home interior projects</li>
+            </ul>
+            <a class="btn" href="contact.html">Design Your Home <span class="arrow">↗</span></a>
+          </div>
+        </div>
+
+        <!-- 06 Commercial Interiors -->
+        <div class="detail reverse reveal" id="commercial">
+          <div class="detail-visual">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1100&q=85" alt="Modern commercial office interior" loading="lazy" width="1100" height="840">
+            <span class="detail-num">06</span>
+          </div>
+          <div class="detail-copy">
+            <span class="eyebrow">Commercial interiors</span>
+            <h2>Environments that welcome and work.</h2>
+            <p>Welcoming, considered environments for studios, offices, boutiques and hospitality spaces — designed to reflect your brand and support the people in them.</p>
+            <ul class="detail-list">
+              <li>Offices &amp; studios</li>
+              <li>Retail &amp; boutique spaces</li>
+              <li>Hospitality &amp; café interiors</li>
+              <li>Brand-led spatial design</li>
+            </ul>
+            <a class="btn" href="contact.html">Shape Your Business <span class="arrow">↗</span></a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PACKAGES -->
+    <section class="section packages" id="packages">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow">Ways to work together</span>
+          <h2>Simple packages, clear scope.</h2>
+          <p>Choose the level of support that suits your project. Every package begins with a conversation so the scope is right for you.</p>
+        </div>
+        <div class="package-grid">
+          <article class="package-card reveal">
+            <span class="package-tag">Starter</span>
+            <h3>Design Consultation</h3>
+            <p class="package-desc">A focused starting point for understanding your space and next steps.</p>
+            <div class="package-price">₹—<small>one-time consultation</small></div>
+            <ul class="package-list">
+              <li>Up to 60-minute design conversation</li>
+              <li>Space &amp; layout review</li>
+              <li>Style &amp; palette direction</li>
+              <li>Written summary of recommendations</li>
+            </ul>
+            <a class="btn" href="contact.html">Book Consultation <span class="arrow">↗</span></a>
+          </article>
+          <article class="package-card featured reveal reveal-delay-1">
+            <span class="package-tag">Most popular</span>
+            <h3>Design &amp; Visualise</h3>
+            <p class="package-desc">The full design direction, brought to life with 3D visualisations.</p>
+            <div class="package-price">₹—<small>per space</small></div>
+            <ul class="package-list">
+              <li>Complete interior concept &amp; layout</li>
+              <li>Material &amp; finish palettes</li>
+              <li>3D visualisations of key spaces</li>
+              <li>Furniture &amp; lighting recommendations</li>
+              <li>One round of design refinements</li>
+            </ul>
+            <a class="btn" href="contact.html">Start Your Project <span class="arrow">↗</span></a>
+          </article>
+          <article class="package-card reveal reveal-delay-2">
+            <span class="package-tag">Complete</span>
+            <h3>Full Design &amp; Styling</h3>
+            <p class="package-desc">End-to-end design support, from concept through to the finishing touches.</p>
+            <div class="package-price">Custom<small>project-based quote</small></div>
+            <ul class="package-list">
+              <li>Everything in Design &amp; Visualise</li>
+              <li>Detailed drawings &amp; documentation</li>
+              <li>Furniture sourcing &amp; coordination</li>
+              <li>Styling &amp; final install guidance</li>
+              <li>Ongoing support through handover</li>
+            </ul>
+            <a class="btn" href="contact.html">Request a Quote <span class="arrow">↗</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow">Common questions</span>
+          <h2>Good to know before we start.</h2>
+          <p>A few answers to the questions we hear most often. Not seeing yours? Get in touch — we’re happy to help.</p>
+        </div>
+        <div class="faq-grid reveal">
+          <details class="faq-item">
+            <summary>How does the design process begin?</summary>
+            <div class="faq-answer">It starts with a conversation. We’ll talk about your space, your goals, your style and your budget — then recommend the level of support that fits. From there, we agree the scope and timeline before any design work begins.</div>
+          </details>
+          <details class="faq-item">
+            <summary>How long does a typical project take?</summary>
+            <div class="faq-answer">It depends on scope. A single-space concept might take a few weeks, while a full home or commercial project can take several months. We’ll give you a clear timeline during the consultation and keep you updated throughout.</div>
+          </details>
+          <details class="faq-item">
+            <summary>Can I hire you for just a floor plan or 3D visual?</summary>
+            <div class="faq-answer">Yes. Our services are flexible — you can book a single service like a floor plan or 3D visualisation, or combine several into a full design package. Many clients start small and expand later.</div>
+          </details>
+          <details class="faq-item">
+            <summary>Do you work outside your city?</summary>
+            <div class="faq-answer">We work on both local and remote projects. Many design services — plans, visualisations, styling direction — can be delivered remotely with video calls. Add your service area details here before launch.</div>
+          </details>
+          <details class="faq-item">
+            <summary>What do you need from me to get started?</summary>
+            <div class="faq-answer">A few things help: basic measurements or a floor plan (if you have one), photos of the space, a sense of your style and budget, and any timelines you’re working to. Don’t worry if you don’t have all of it — we can help fill in the gaps.</div>
+          </details>
+          <details class="faq-item">
+            <summary>How is pricing worked out?</summary>
+            <div class="faq-answer">Pricing depends on scope, space size and the level of support you need. After the initial consultation, we provide a clear written proposal covering the deliverables, timeline and cost — with no surprises.</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-panel reveal">
+          <div>
+            <h2>Not sure which service you need?</h2>
+            <p>Tell us about your space — we’ll help you work out the right starting point.</p>
+          </div>
+          <a class="btn" href="contact.html">Book a Consultation <span class="arrow">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="R CREAATIONS & DESIGNS home">
+          <img
+            src="images/nova-logo.png"
+            alt="R CREAATIONS & DESIGNS Logo"
+            class="brand-logo"
+          >
+          <span class="brand-name">
+            R CREAATIONS & DESIGNS
+            <small>DESIGN · DETAIL · LIVING</small>
+          </span>
+        </a>
+
+        <p>
+          Thoughtful spaces, meaningful details and interiors
+          designed around the way you live.
+        </p>
+      </div>
+
+      <!-- Explore -->
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="about.html">About Us</a>
+        <a href="service.html">Services</a>
+        <a href="project.html">Selected Work</a>
+        <a href="our.html">Our Process</a>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="service.html">Interior Design</a>
+        <a href="service.html">3D Design</a>
+        <a href="service.html">Floor Plans</a>
+        <a href="service.html">Commercial Spaces</a>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col">
+        <h4>Get in Touch</h4>
+        <a href="contact.html">Book a Consultation</a>
+        <a href="mailto:hello@novainterior.example">
+          hello@novainterior.example
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Bottom Footer -->
+    <div class="footer-bottom">
+      <span>
+        © <span id="year"></span> Aavrit Interior. All rights reserved.
+      </span>
+      <span>powered by kwanggroup</span>
+    </div>
+  </div>
+</footer>
+
+  
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+
+    // ===== MOBILE MENU =====
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('navLinks');
+
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('open');
+
+        toggle.setAttribute('aria-expanded', String(isOpen));
+        toggle.setAttribute(
+          'aria-label',
+          isOpen ? 'Close menu' : 'Open menu'
+        );
+        toggle.textContent = isOpen ? '×' : '☰';
+      });
+
+      nav.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+          nav.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+          toggle.setAttribute('aria-label', 'Open menu');
+          toggle.textContent = '☰';
+        });
+      });
+    }
+
+    // ===== DYNAMIC COPYRIGHT YEAR =====
+    const yearElement = document.getElementById('year');
+
+    if (yearElement) {
+      yearElement.textContent = new Date().getFullYear();
+    }
+
+    // ===== SCROLL REVEAL ANIMATION =====
+    const revealElements = document.querySelectorAll(
+      '.reveal, .section, .page-hero'
+    );
+
+    if ('IntersectionObserver' in window) {
+      const revealObserver = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              entry.target.classList.add('is-visible');
+
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.1,
+          rootMargin: '0px 0px -50px 0px'
+        }
+      );
+
+      revealElements.forEach((element) => {
+        revealObserver.observe(element);
+      });
+    } else {
+      // Fallback for older browsers
+      revealElements.forEach((element) => {
+        element.classList.add('visible', 'is-visible');
+      });
+    }
+
+    // ===== SMOOTH SCROLL FOR ANCHOR LINKS =====
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener('click', (event) => {
+        const targetId = anchor.getAttribute('href');
+
+        if (!targetId || targetId === '#') return;
+
+        let target;
+
+        try {
+          target = document.querySelector(targetId);
+        } catch {
+          return;
+        }
+
+        if (target) {
+          event.preventDefault();
+
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+  });
+</script>
+
+</body>
+</html>
